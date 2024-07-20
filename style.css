@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.webpage-container {
+  display: grid;
+  grid-template-columns: minmax(max-content, 1.2fr) 4fr;
+  height: 100vh;
+}
+
+.sidebar {
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(170, 170, 170) ;
+  grid-column: 1;
+  background-color: #efefef;
+}
+
+.logo-cont {
+  display: flex;
+  align-items: center;
+  padding: 0 23px 0 12px;
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  padding: 8px 14px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-section-control {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 30px;
+}
+
+label {
+  color: rgb(62, 62, 62);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+input {
+  border: 1.5px solid #808080;
+  border-radius: 6px;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+input:focus {
+  border: 1.5px solid rgb(41, 134, 233);
+}
+
+.form-section-btn {
+  display: flex;
+  justify-content: center;
+  padding: 12px 30px;
+}
+
+.add-btn {
+  font-size: 18px;
+  width: 80px;
+  padding: 4px 20px;
+  background-color: white;
+  border: 1.5px solid gray;
+  border-radius: 6px;
+}
+
+.add-btn:active {
+  background-color: #f7f7f7;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
+  grid-auto-rows: 350px;
+  justify-content: center;
+  gap: 50px;
+  grid-column: 2;
+  padding: 20px 60px 80px 60px;
+  background-color: #f3f3f3;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgb(125, 125, 125);
+}
+
+.book-section-one {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 5px;
+  padding: 5px 5px;
+}
+
+.book-section-two {
+  color: #777777;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1.5;
+  padding: 13px;
+  background-color: rgb(246, 246, 246);
+}
+
+.book-section-three {
+  padding: 5px 5px;
+}
+
+.book-section-one,
+.book-section-three {
+  flex: 1;
+  background-color: rgb(255, 207, 117);
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.pages {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.read-btn {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+}
+
+.delete-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("./images/svg/trash-can.svg");
+  background-color: transparent;
+  border: none;
+}
